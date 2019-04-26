@@ -1,0 +1,6 @@
+version: "2"
+virtualmachines:
+- name: ubuntu
+  image: instruqt-hashicorp/microk8s-1-13-1
+  shell: /bin/bash
+  machine_type: n1-standard-2

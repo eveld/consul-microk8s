@@ -1,0 +1,42 @@
+slug: microk8s
+id: jpkxnropihtq
+version: 0.0.1
+type: track
+title: microk8s
+teaser: microk8s
+description: microk8s
+icon: ""
+tags:
+- microk8s
+owner: hashicorp
+developers:
+- jackson.nic@gmail.com
+- eveld@hashicorp.com
+private: false
+published: false
+challenges:
+- slug: first
+  id: jspfkf4t7dtd
+  type: challenge
+  title: first
+  teaser: first
+  assignment: |-
+    Log in using: `admin/admin`
+
+    Enable dns: microk8s.enable dns`
+    Enable the dashboard: `microk8s.enable dashboard`
+  notes:
+  - type: video
+    url: https://www.youtube.com/embed/4ht22ReBjno
+  tabs:
+  - title: shell
+    type: terminal
+    hostname: ubuntu
+  - title: kubernetes
+    type: service
+    hostname: ubuntu
+    path: /api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/deployment?namespace=default
+    port: 16443
+  difficulty: basic
+  timelimit: 5000
+checksum: "5880180332979716758"

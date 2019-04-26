@@ -1,0 +1,4 @@
+#!/bin/bash
+#kubectl apply -f /root/core-dns.yaml
+
+#kubectl apply -f /root/dashboard.yaml
